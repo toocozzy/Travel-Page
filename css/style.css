@@ -131,7 +131,7 @@ input {
   color: var(--title-color);
   text-align: center;
   text-transform: capitalize;
-  margin-bottom: var(--mb-2);
+  margin: var(--mb-2) 0;
 }
 
 .container {
@@ -226,6 +226,16 @@ input {
   right: 0;
 }
 
+.scroll-header {
+  background-color: var(--body-color);
+  box-shadow: 0 0 4px rgba(14, 55, 63, 0.15);
+}
+
+.scroll-header .nav__logo,
+.scroll-header .nav__toggle {
+  color: var(--title-color);
+}
+
 /* home section  */
 
 .home__img {
@@ -284,7 +294,7 @@ input {
   position: absolute;
   right: 0;
   bottom: 1rem;
-  width: 228px;
+  width: 248px;
 }
 
 .home__info-title {
@@ -335,8 +345,52 @@ input {
 .button--link {
   background: none;
   padding: 0;
+  margin-top: var(--mb-0-75);
 }
 
 .button--link:hover {
   background-color: none;
+}
+
+/* about section  */
+
+.about__data {
+  text-align: center;
+}
+
+.about__container {
+  row-gap: 2.5rem;
+}
+
+.about__description {
+  margin-bottom: var(--mb-2);
+}
+
+.about__img {
+  display: flex;
+  column-gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.about__img-overlay {
+  overflow: var(--img-hidden);
+}
+
+.about__img-one {
+  width: 130px;
+}
+
+.about__img-two {
+  width: 180px;
+}
+
+.about__img-one,
+.about__img-two {
+  transition: var(--img-transition);
+}
+
+.about__img-one:hover,
+.about__img-two:hover {
+  transition: var(--img-scale);
 }
