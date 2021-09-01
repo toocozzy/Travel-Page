@@ -30,3 +30,15 @@ function scrollHeader() {
   else header.classList.remove("scroll-header");
 }
 window.addEventListener("scroll", scrollHeader);
+
+var swiper = new Swiper(".discover__container", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  loop: true,
+  spaceBetween: 32,
+  coverflowEffect: {
+    rotate: 0,
+  },
+});
