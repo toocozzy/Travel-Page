@@ -501,3 +501,33 @@ input {
 .experience.section {
   margin: var(--mb-2-5) 0;
 }
+
+/* video section  */
+
+.video__container {
+  padding-bottom: 1rem;
+}
+
+.video__description {
+  text-align: center;
+  margin-bottom: var(--mb-2-5);
+}
+
+.video__content {
+  position: relative;
+}
+
+.video__button {
+  position: absolute;
+  right: 1rem;
+  bottom: -1rem;
+  padding: 1rem 1.5rem;
+}
+
+.video_button-icon {
+  font-size: 1.2rem;
+}
+
+.video.section {
+  margin: var(--mb-2-5) 0;
+}
